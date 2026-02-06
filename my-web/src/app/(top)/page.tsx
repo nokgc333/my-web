@@ -1,6 +1,7 @@
-import { buttonVariants } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import { cn } from '@/lib/utils';
+import { buttonVariants } from '@/components/ui/button';
+import { siteConfig } from '@/config/site';
 
 export default function TopPage() {
   return (
@@ -9,7 +10,7 @@ export default function TopPage() {
         <section className="pt-6 md:pt-10 pb-6 md:pb-10 lg:py-32">
           <div className="container text-center flex flex-col items-center gap-4 max-w-[64rem]">
             <Link
-              href={'/'}
+              href={siteConfig.links.x}
               className="bg-muted px-4 py-1.5 rounded-2xl text-sm font-medium"
             >
               Hello X
@@ -31,11 +32,13 @@ export default function TopPage() {
               <Link
                 href={'/login'}
                 className={cn(buttonVariants({ size: 'lg' }))}
+                target="_blank"
+                rel="noreferrer"
               >
                 login
               </Link>
               <Link
-                href={'/'}
+                href={siteConfig.links.github}
                 className={cn(
                   buttonVariants({ size: 'lg', variant: 'secondary' })
                 )}
