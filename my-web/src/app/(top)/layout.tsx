@@ -1,7 +1,8 @@
 import { buttonVariants } from '@/components/ui/button';
-import MainNav from '@/components/ui/main-nav';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import MainNav from '@/components/ui/main-nav';
+import { topConfig } from '@/config/top';
 
 export default function TopLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -9,7 +10,7 @@ export default function TopLayout({ children }: { children: React.ReactNode }) {
       {/* headerコンポーネントでも良い */}
       <header className="container z-40 bg-background">
         <div className="flex items-center justify-between h-20 py-6">
-          <MainNav />
+          <MainNav items={topConfig.mainNav} />
           <nav>
             <Link
               href={'/login'}

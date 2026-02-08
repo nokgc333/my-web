@@ -1,3 +1,13 @@
+export type NavItem = {
+  title: string;
+  href: string;
+  disabled?: boolean;
+};
+
+export type TopConfig = {
+  mainNav: NavItem[];
+};
+
 export type SiteConfig = {
   name: string;
   description: string;
