@@ -3,6 +3,7 @@ import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import MainNav from '@/components/ui/main-nav';
 import { topConfig } from '@/config/top';
+import SiteFooter from '@/components/ui/site-footer';
 
 export default function TopLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -26,6 +27,8 @@ export default function TopLayout({ children }: { children: React.ReactNode }) {
       </header>
 
       <main>{children}</main>
+
+      <SiteFooter />
     </div>
   );
 }
