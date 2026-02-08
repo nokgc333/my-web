@@ -341,6 +341,28 @@ export default function TopPage() {
             </p>
           </div>
         </section>
+
+        <section id="contact" className="container py-8 md:py-12 lg:py-24">
+          <div className="flex flex-col gap-4 text-center max-w-[58rem] mx-auto">
+            <h2 className="text-3xl md:text-6xl font-extrabold">contact</h2>
+            <p className="sm:text-lg sm:leading-7 text-muted-foreground">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+              soluta architecto pariatur sunt illum ex, quos deleniti dolorum
+              cum dolorem rerum libero animi, vero nemo! Veniam explicabo
+              corporis at illo?
+              <br />
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <Link
+              href={siteConfig.links.x}
+              className="underline underline-offset-4"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Lorem ipsum dolor.
+            </Link>
+          </div>
+        </section>
       </main>
     </>
   );
