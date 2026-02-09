@@ -1,7 +1,7 @@
 ---
 title: This is test post.
 description: TestTestTestTestTest
-image: /images/blog/blog-post-3.jpg
+image: /images/blog/blog-post-2.png
 date: "2026-02-09"
 authors:
   - kinn
