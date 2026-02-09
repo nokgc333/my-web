@@ -2,12 +2,39 @@ import type { Metadata } from 'next';
 import { Noto_Sans_JP } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
+import { siteConfig } from '@/config/site';
 
 const fontNotoSansJP = Noto_Sans_JP({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'naokikaneko.com',
-  description: 'this is "naokikaneko.com".',
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  keywords: ['React', 'TypeScript', 'Next.js', 'WordPress'],
+  authors: [
+    {
+      name: 'kinn / naokikaneko',
+      url: siteConfig.url,
+    },
+  ],
+  openGraph: {
+    type: 'website',
+    locale: 'ja',
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+    // images: [`${siteConfig.url}/og.jpg`],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.name,
+    description: siteConfig.description,
+    // images: [`${siteConfig.url}/og.jpg`],
+    creator: 'kinn / naokikaneko',
+  },
 };
 
 export default function RootLayout({

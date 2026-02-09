@@ -2,7 +2,7 @@ import { SiteConfig } from '@/types';
 
 export const siteConfig: SiteConfig = {
   name: 'naokikaneko.com',
-  description: '',
+  description: 'This is naokikaneko.com',
   url: 'http://localhost:3000',
   ogImage: '',
   links: {
