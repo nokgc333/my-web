@@ -1,3 +1,4 @@
+import AuthForm from '@/components/auth/auth-form';
 import Link from 'next/link';
 
 export default function Login() {
@@ -12,7 +13,7 @@ export default function Login() {
         </div>
       </div>
 
-      {/* <UserAuthForm /> */}
+      <AuthForm />
       
       <p className="text-sm px-8 text-center text-muted-foreground">
         <Link href={'/register'} className="underline underline-offset-4">

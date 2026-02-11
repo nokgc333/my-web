@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import MainNav from '@/components/main-nav';
 import { topConfig } from '@/config/top';
-import SiteFooter from '@/components/site-footer';
+import SiteFooter from '@/components/footer';
 
 export default function TopLayout({ children }: { children: React.ReactNode }) {
   return (
