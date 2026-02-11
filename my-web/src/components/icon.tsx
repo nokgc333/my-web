@@ -1,5 +1,5 @@
-import { Github } from 'lucide-react';
 import { Loader } from 'lucide-react';
+import { Github } from 'lucide-react';
 
 export const Icon = {
   spinner: Loader,
