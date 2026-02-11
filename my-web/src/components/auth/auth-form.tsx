@@ -2,6 +2,7 @@ import { cn } from '@/lib/utils';
 import { Input } from '../ui/input';
 import { Label } from '../ui/label';
 import { buttonVariants } from '../ui/button';
+import { Icon } from '../icon';
 
 export default function AuthForm() {
   return (
@@ -12,7 +13,7 @@ export default function AuthForm() {
             <Label htmlFor="email">メールアドレス</Label>
             <Input id="email" placeholder="name@example.com" type="email" />
           </div>
-          <button className={cn(buttonVariants({ variant: 'outline' }))}>
+          <button className={cn(buttonVariants())}>
             メールアドレスでログイン
           </button>
         </div>
@@ -29,7 +30,10 @@ export default function AuthForm() {
         </div>
       </div>
 
-      <button className={cn(buttonVariants())}>GitHub</button>
+      <button className={cn(buttonVariants({ variant: 'outline' }))}>
+        <Icon.github />
+        GitHub
+      </button>
     </div>
   );
 }
