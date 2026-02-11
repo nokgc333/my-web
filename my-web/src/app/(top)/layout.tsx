@@ -1,9 +1,9 @@
 import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
-import MainNav from '@/components/ui/main-nav';
+import MainNav from '@/components/main-nav';
 import { topConfig } from '@/config/top';
-import SiteFooter from '@/components/ui/site-footer';
+import SiteFooter from '@/components/site-footer';
 
 export default function TopLayout({ children }: { children: React.ReactNode }) {
   return (
