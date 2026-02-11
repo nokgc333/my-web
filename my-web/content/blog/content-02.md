@@ -61,7 +61,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis eius dol
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis eius doloribus? Odit perspiciatis commodi illo deserunt, accusamus perferendis veritatis nostrum sit excepturi quaerat totam incidunt assumenda cumque ducimus aspernatur?:
 
 <Image
-  src="/images/blog/blog-post-4.jpg"
+  src="/images/blog/blog-post-2.png"
   width="718"
   height="404"
   alt="Image"
