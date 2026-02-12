@@ -10,6 +10,7 @@ import { useState } from 'react';
 
 export default function AuthForm() {
   const [isGithubLoading, setIsGithubLoading] = useState<boolean>(false);
+  const [isGoogleLoading, setIsGoogleLoading] = useState<boolean>(false);
 
   return (
     <div className="grid gap-6">
@@ -36,16 +37,37 @@ export default function AuthForm() {
         </div>
       </div>
 
-      <button
-        className={cn(buttonVariants({ variant: 'outline' }))}
-        onClick={() => {
-          setIsGithubLoading(true);
-          signIn('github');
-        }}
-      >
-        {isGithubLoading ? <Icon.spinner className='animate-spin' /> : <Icon.github />}
-        GitHub
-      </button>
+      <div className='flex flex-col gap-2'>
+        <button
+          className={cn(buttonVariants({ variant: 'outline' }))}
+          onClick={() => {
+            setIsGithubLoading(true);
+            signIn('github');
+          }}
+        >
+          {isGithubLoading ? (
+            <Icon.spinner className="animate-spin" />
+          ) : (
+            <Icon.github />
+          )}
+          GitHub
+        </button>
+
+        <button
+          className={cn(buttonVariants({ variant: 'outline' }))}
+          onClick={() => {
+            setIsGoogleLoading(true);
+            signIn('google');
+          }}
+        >
+          {isGithubLoading ? (
+            <Icon.spinner className="animate-spin" />
+          ) : (
+            <Icon.google />
+          )}
+          Google
+        </button>
+      </div>
     </div>
   );
 }
