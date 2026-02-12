@@ -10,10 +10,10 @@ export default withAuth(
     // 真偽値(“!!”で強制的に真偽値“true or false”に変換できる)
     const isAuth = !!token;
 
-    // '/login'と'/register'ページに訪れたときのみリダイレクト
+    // '/login'と'/signup'ページに訪れたときのみリダイレクト
     const isAuthPage =
       req.nextUrl.pathname.startsWith('/login') ||
-      req.nextUrl.pathname.startsWith('/register');
+      req.nextUrl.pathname.startsWith('/signup');
 
     if (isAuthPage) {
       // 「req.url」を付けることで、絶対パスのURLが第2引数に含まれる
@@ -40,5 +40,5 @@ export default withAuth(
 );
 
 export const config = {
-  matcher: ['/dashboard/:path*', '/editor/:path', '/login', '/register'],
+  matcher: ['/dashboard/:path*', '/editor/:path', '/login', '/signup'],
 };
