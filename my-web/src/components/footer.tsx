@@ -1,7 +1,7 @@
 import { siteConfig } from '@/config/site';
 import Link from 'next/link';
 
-export default function SiteFooter() {
+export default function Footer() {
   return (
     <footer>
       <div className="container py-10 md:py-10 md:h-20">
